@@ -27,7 +27,7 @@ const SignIn = () => {
         if (email === "admin@gmail.com" && password === "admin11") {
           navigate("/admin");
         } else {
-          navigate("/home");
+          navigate("/Bord/Home.html");
         }
 
       }) 

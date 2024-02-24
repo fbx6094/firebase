@@ -29,4 +29,3 @@ function updateTimer() {
 
 // Запускаем таймер каждую секунду
 var timerInterval = setInterval(updateTimer, 1000);
-

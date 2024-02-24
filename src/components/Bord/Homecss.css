@@ -200,9 +200,8 @@
 }
 
 .streets_container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 50px;
+position: absolute;
+left: 0%;
 }
 
 .street_label_container {
@@ -696,4 +695,7 @@
     12.5% {
         top: 30px;
     }
+}
+.ulmedia{
+    position: absolute;
 }
