@@ -1,18 +1,23 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignUp from "./components/auth/SignUp";
 import SignIn from "./components/auth/SignIn";
 import AuthDetails from "./components/auth/AuthDetails";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/auth/Home"
+import Admin from "./components/Admin";
 
 function App() {
   return (
     <Router>
-    <div className="App">
-      <SignUp />
-      <SignIn />
-      <AuthDetails />
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/authdetails" element={<AuthDetails />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

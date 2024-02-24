@@ -23,7 +23,13 @@ const SignIn = () => {
         setError("");
         setEmail("");
         setPassword("");
-        navigate(".components/Home");
+
+        if (email === "admin@gmail.com" && password === "admin11") {
+          navigate("/admin");
+        } else {
+          navigate("/home");
+        }
+
       }) 
       .catch((error) => {
         console.log(error);
